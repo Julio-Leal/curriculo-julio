@@ -1,8 +1,128 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    color: rgb(65, 127, 33);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+header {
+    background-color: #0a192f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#perfil {
+    display: flex;
+    align-items: center;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #64ffda ;
+}
+
+#nome {
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#contatos {
+    text-align: left;
+}
+
+#contatos h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#contatos a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+#contatos a:hover {
+    text-decoration: underline;
+}
+
+main, #sobre {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+#sobre h2 {
+    text-align: center;
+    color: #112240;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    text-align: justify;
+}
+
+main h2 {
+    text-align: center;
+    color: #112240;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+h3 {
+    color: #0a192f;
+}
+
+a {
+    color: #64ff67;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Ajustes em responsividade */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #contatos {
+      text-align: left;
+      margin-top: 15px;
+    }
+  
+    table, tr, td {
+      display: block;
+      width: 100%;
+    }
 }
